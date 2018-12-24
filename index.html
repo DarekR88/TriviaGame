@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>TRIVIA GAME</h1>
+    <div id="rules">
+        <h3>Rules</h3>
+        <p>In this trivia game you will be given 10 seconds to answer each question.</p>
+        <p>By correctly answering a question within the time limit you will recieve a point towards your total score.</p>
+        <p>Incorrectly answering a question, submitting without choosing an answer, or timing out on a question will result in no points being added to your total score.</p>
+        <p>Click the start button to begin.</p>
+        <button id="startGame" type="button">START</button>
+    </div>  
+    <div id="game">
+        <div id="timer">
+            <p>Timer:</p>
+            <div id="secondsLeft">10</div>
+        </div>
+        <div id="questionOne">
+            <p>What is the longest river in the world</p>
+            <div id="answersOne">
+                <button id="correct" type="button">The Amazon</button>
+            <br>
+            <br>
+                <button class="incorrect" type="button">The Nile</button>
+            <br>
+            <br>
+                <button class="incorrect" type="button">The Mississippi</button>
+            </div>    
+        </div>        
+            <div id="riversCorrect">
+                <p>The correct answer is "The Amazon"</p>
+            </div>
+        
+        <div id="questionTwo">
+            <p>Who was the 16th president of the United States of America</p>
+                <div id="answersTwo">
+                    <button class="incorrectTwo" type="button">Andrew Jackson</button>
+                <br>
+                <br>
+                    <button class="incorrectTwo" type="button">Ulysses S. Grant</button>
+                <br>
+                <br>
+                    <button id="correctTwo" type="button">Abraham Lincoln</button>
+                </div> 
+        </div>            
+            <div id="presidentsCorrect">
+                <p>The correct answer is "Abraham Lincoln"</p>
+            </div>
+               
+        <div id="questionThree">
+            <p>If one side of a hexagonal polygon is 9 inches, what is it's perimeter?</p>
+            <div id="ansersThree">
+                <button class="incorrectThree" type="button">63 inches</button>
+            <br>
+            <br>
+                <button class="incorrectThree" type="button">45 inches</button>
+            <br>
+            <br>
+                <button id="correctThree" type="button">54 inches</button>
+            </div>    
+        </div>        
+            <div id="polygonsCorrect">
+                <p>The correct answer is "54 inches"</p>
+            </div>
+        
+    <div id="results">
+        <h3>RESULTS</h3>
+        <h3>Time Elapsed:</h3>
+        <h3 id="secondsTaken">0</h3>
+        <h3>Your Score:</h3>
+        <h3 id="score">0</h3>
+        <button id="reset" type="button">RESET</button>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
